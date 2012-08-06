@@ -1,6 +1,6 @@
 CC= 		clang++
 CFLAGS= 	-g -Wall
-PROBLEMS = 	problem01 problem02 problem03 problem04 problem05
+PROBLEMS = 	problem01 problem02 problem03 problem04 problem05 problem06
 
 all: $(foreach f, $(PROBLEMS), compile-$(f))
 
