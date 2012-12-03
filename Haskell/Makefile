@@ -1,6 +1,6 @@
 CC = 		ghc
 CFLAGS = 	--make
-PROBLEMS = 	problem20
+PROBLEMS = 	problem20 problem25
 
 all: $(foreach f, $(PROBLEMS), compile-$(f))
 
