@@ -12,4 +12,5 @@ import Data.Char
 sumOfFactorialNums :: (Enum a, Num a, Show a) => a -> Int
 sumOfFactorialNums n = sum $ map digitToInt $ show $ product [1..n]
 
+main :: IO ()
 main = print $ sumOfFactorialNums 100
