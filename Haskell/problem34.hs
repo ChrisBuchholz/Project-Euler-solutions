@@ -17,8 +17,10 @@ import Data.Char
 factorialProduct :: (Enum a, Num a) => a -> a
 factorialProduct n = product [1..n]
 
+isFactorion :: Int -> Bool
 isFactorion n
     | sum (map factorialProduct $ map digitToInt $ show n) == n = True
     | otherwise                                                 = False
 
+main :: IO ()
 main = print $ sum [n | n <- [145..40585], isFactorion n]
