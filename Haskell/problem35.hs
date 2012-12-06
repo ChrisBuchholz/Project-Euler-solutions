@@ -14,7 +14,7 @@ rotate :: [a] -> [a]
 rotate (x:xs) = xs ++ [x]
 
 rotations :: [a] -> [[a]]
-rotations x = take (length x) $ iterate rotate x
+rotations xs = take (length xs) $ iterate rotate xs
 
 prime :: Integral a => a -> Bool
 prime n
