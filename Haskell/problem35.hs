@@ -8,9 +8,9 @@ rotations x = take (length x) $ iterate rotate x
 
 prime :: Integral a => a -> Bool
 prime n
-	| n < 2														                  = False
-	| n == 2													                  = True
-	| length [x | x <- [2..(floor . sqrt $ fromIntegral n)], n `mod` x == 0] == 0 = True 
+	| n < 2                                                                       = False
+	| n == 2                                                                      = True
+	| length [x | x <- [2..(floor . sqrt $ fromIntegral n)], n `mod` x == 0] == 0 = True
 	| otherwise                                                                   = False
 
 circularPrime :: Show a => a -> Bool
